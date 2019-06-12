@@ -84,6 +84,5 @@ describe('mock fs', () => {
         done();
       });
     });
-    
   });
 });

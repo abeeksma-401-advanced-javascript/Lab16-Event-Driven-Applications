@@ -12,6 +12,7 @@ const write = util.promisify(fs.writeFile);
 const alterFile = async file => {
   try{
     let data = await read(file)
+    shriek.emit('read', file);
     let text = data.toString().toUpperCase();
     await write(file, Buffer.from(text));
     shriek.emit('save', file);
