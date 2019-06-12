@@ -8,7 +8,16 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications/issues"
+  },
+  "homepage": "https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications#readme",
+  "devDependencies": {
     "jest": "^24.8.0"
   }
 }
