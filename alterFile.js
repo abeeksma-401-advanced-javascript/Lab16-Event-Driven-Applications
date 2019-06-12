@@ -3,18 +3,24 @@
 const fs = require('fs');
 const util = require('util');
 const shriek = require('./eventEmitter');
+require('./logger')
 
-
-//i have to promisify and do something at some point....
-const read = promisify(fs.readFile);
-const write = promisify(fs.writeFile);
+const read = util.promisify(fs.readFile);
+const write = util.promisify(fs.writeFile);
 
 
 const alterFile = async file => {
-  let data = await read(file)
-  let text = data.toString().toUpperCase();
-  await write(file, Buffer.from(text));
-  console.log(`${file} saved`);
+  try{
+    let data = await read(file)
+    let text = data.toString().toUpperCase();
+    await write(file, Buffer.from(text));
+    shriek.emit('save', file);
+  }
+  catch(error){
+    shriek.emit('error', error);
+  }
+
 }
+
 
 module.exports = alterFile;

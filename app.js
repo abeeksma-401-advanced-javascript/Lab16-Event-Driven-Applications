@@ -1,7 +1,8 @@
 'use strict';
 
 const fs = require('fs');
-require('./alterFile');
+const alterFile = require('./alterFile');
+require('./logger');
 
 const shriek = require('./eventEmitter');
 

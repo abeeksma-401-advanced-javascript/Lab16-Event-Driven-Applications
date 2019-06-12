@@ -2,6 +2,7 @@
 
 jest.mock('fs');
 
+const alterFile = require('../alterFile');
 const fs = require('fs');
 
 describe('mock fs', () => {
@@ -82,6 +83,7 @@ describe('mock fs', () => {
         expect(data.toString()).toBe('./another/good/file.txt Contents');
         done();
       });
-    })
+    });
+    
   });
 });
