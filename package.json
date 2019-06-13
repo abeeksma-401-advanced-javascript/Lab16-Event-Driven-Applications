@@ -1,0 +1,26 @@
+{
+  "name": "events-lab",
+  "version": "1.0.0",
+  "description": "Events Lab",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint **/*.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications/issues"
+  },
+  "homepage": "https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
