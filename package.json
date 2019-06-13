@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --verbose --coverage",
-    "lint": "elsint **/*.js"
+    "lint": "eslint **/*.js"
   },
   "author": "",
   "license": "MIT",
