@@ -4,11 +4,14 @@
   "description": "Events Lab",
   "main": "app.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+    "lint": "elsint **/*.js"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^5.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abeeksma-401-advanced-javascript/Lab16-Event-Driven-Applications.git"
